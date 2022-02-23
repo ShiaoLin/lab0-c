@@ -1,0 +1,705 @@
+desc: (none)
+cmd: ./qtest -f traces/trace-14-perf.cmd
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=12194486
+mem_heap_B=3323393
+mem_heap_extra_B=473991
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=24791063
+mem_heap_B=6817745
+mem_heap_extra_B=973199
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=32400791
+mem_heap_B=8928721
+mem_heap_extra_B=1274783
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=45103490
+mem_heap_B=12452513
+mem_heap_extra_B=1778199
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=54607578
+mem_heap_B=15088993
+mem_heap_extra_B=2154855
+mem_stacks_B=0
+heap_tree=detailed
+n2: 15088993 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 15078280 0x10E582: test_malloc (harness.c:138)
+  n1: 8616128 0x10EAEB: q_insert_head (queue.c:57)
+   n1: 8616128 0x10C2FD: do_ih (qtest.c:201)
+    n1: 8616128 0x10D4B1: interpret_cmda (console.c:185)
+     n1: 8616128 0x10D9FD: interpret_cmd (console.c:208)
+      n1: 8616128 0x10E243: cmd_select (console.c:583)
+       n1: 8616128 0x10E510: run_console (console.c:656)
+        n0: 8616128 0x10C9C6: main (qtest.c:1061)
+  n1: 6462096 0x10E805: test_strdup (harness.c:217)
+   n1: 6462096 0x10EB00: q_insert_head (queue.c:62)
+    n1: 6462096 0x10C2FD: do_ih (qtest.c:201)
+     n1: 6462096 0x10D4B1: interpret_cmda (console.c:185)
+      n1: 6462096 0x10D9FD: interpret_cmd (console.c:208)
+       n1: 6462096 0x10E243: cmd_select (console.c:583)
+        n1: 6462096 0x10E510: run_console (console.c:656)
+         n0: 6462096 0x10C9C6: main (qtest.c:1061)
+  n0: 56 in 1 place, below massif's threshold (1.00%)
+ n0: 10713 in 7 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=6
+#-----------
+time=62514054
+mem_heap_B=17282289
+mem_heap_extra_B=2468199
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=70593334
+mem_heap_B=19523521
+mem_heap_extra_B=2788391
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=78672614
+mem_heap_B=21764753
+mem_heap_extra_B=3108583
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=86751894
+mem_heap_B=24005985
+mem_heap_extra_B=3428759
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=93840223
+mem_heap_B=25972321
+mem_heap_extra_B=3709679
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=103539719
+mem_heap_B=28663009
+mem_heap_extra_B=4094079
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=113239215
+mem_heap_B=31353697
+mem_heap_extra_B=4478479
+mem_stacks_B=0
+heap_tree=detailed
+n2: 31353697 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 31342984 0x10E582: test_malloc (harness.c:138)
+  n1: 17910272 0x10EAEB: q_insert_head (queue.c:57)
+   n1: 17910272 0x10C2FD: do_ih (qtest.c:201)
+    n1: 17910272 0x10D4B1: interpret_cmda (console.c:185)
+     n1: 17910272 0x10D9FD: interpret_cmd (console.c:208)
+      n1: 17910272 0x10E243: cmd_select (console.c:583)
+       n1: 17910272 0x10E510: run_console (console.c:656)
+        n0: 17910272 0x10C9C6: main (qtest.c:1061)
+  n1: 13432656 0x10E805: test_strdup (harness.c:217)
+   n1: 13432656 0x10EB00: q_insert_head (queue.c:62)
+    n1: 13432656 0x10C2FD: do_ih (qtest.c:201)
+     n1: 13432656 0x10D4B1: interpret_cmda (console.c:185)
+      n1: 13432656 0x10D9FD: interpret_cmd (console.c:208)
+       n1: 13432656 0x10E243: cmd_select (console.c:583)
+        n1: 13432656 0x10E510: run_console (console.c:656)
+         n0: 13432656 0x10C9C6: main (qtest.c:1061)
+  n0: 56 in 1 place, below massif's threshold (1.00%)
+ n0: 10713 in 7 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=13
+#-----------
+time=126576023
+mem_heap_B=35053393
+mem_heap_extra_B=5007039
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=136275519
+mem_heap_B=37744081
+mem_heap_extra_B=5391439
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=145975015
+mem_heap_B=40434769
+mem_heap_extra_B=5775839
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=157054499
+mem_heap_B=43508273
+mem_heap_extra_B=6214927
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=164664227
+mem_heap_B=45619249
+mem_heap_extra_B=6516511
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=172273955
+mem_heap_B=47730225
+mem_heap_extra_B=6818079
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=179883683
+mem_heap_B=49841201
+mem_heap_extra_B=7119663
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=187493411
+mem_heap_B=51952177
+mem_heap_extra_B=7421247
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=195103139
+mem_heap_B=54063153
+mem_heap_extra_B=7722831
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=202712867
+mem_heap_B=56174129
+mem_heap_extra_B=8024415
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=210322595
+mem_heap_B=58285105
+mem_heap_extra_B=8325983
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=217932323
+mem_heap_B=60396081
+mem_heap_extra_B=8627567
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=225542051
+mem_heap_B=62507057
+mem_heap_extra_B=8929151
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=233151779
+mem_heap_B=64618033
+mem_heap_extra_B=9230735
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=240761507
+mem_heap_B=66729009
+mem_heap_extra_B=9532303
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=248258441
+mem_heap_B=67144465
+mem_heap_extra_B=9591671
+mem_stacks_B=0
+heap_tree=detailed
+n2: 67144465 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 67133752 0x10E582: test_malloc (harness.c:138)
+  n1: 38362112 0x10EAEB: q_insert_head (queue.c:57)
+   n1: 38362112 0x10C2FD: do_ih (qtest.c:201)
+    n1: 38362112 0x10D4B1: interpret_cmda (console.c:185)
+     n1: 38362112 0x10D9FD: interpret_cmd (console.c:208)
+      n1: 38362112 0x10E243: cmd_select (console.c:583)
+       n1: 38362112 0x10E510: run_console (console.c:656)
+        n0: 38362112 0x10C9C6: main (qtest.c:1061)
+  n1: 28771584 0x10E805: test_strdup (harness.c:217)
+   n1: 28771584 0x10EB00: q_insert_head (queue.c:62)
+    n1: 28771584 0x10C2FD: do_ih (qtest.c:201)
+     n1: 28771584 0x10D4B1: interpret_cmda (console.c:185)
+      n1: 28771584 0x10D9FD: interpret_cmd (console.c:208)
+       n1: 28771584 0x10E243: cmd_select (console.c:583)
+        n1: 28771584 0x10E510: run_console (console.c:656)
+         n0: 28771584 0x10C9C6: main (qtest.c:1061)
+  n0: 56 in 1 place, below massif's threshold (1.00%)
+ n0: 10713 in 7 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=29
+#-----------
+time=260878522
+mem_heap_B=70674439
+mem_heap_extra_B=10132313
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=274703392
+mem_heap_B=74542345
+mem_heap_extra_B=10724711
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=288528262
+mem_heap_B=78410251
+mem_heap_extra_B=11317125
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=302353132
+mem_heap_B=82278157
+mem_heap_extra_B=11909523
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=309265567
+mem_heap_B=84212110
+mem_heap_extra_B=12205730
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=316178002
+mem_heap_B=86146063
+mem_heap_extra_B=12501937
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=323090437
+mem_heap_B=88080016
+mem_heap_extra_B=12798144
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=333459057
+mem_heap_B=90980937
+mem_heap_extra_B=13242447
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=340371492
+mem_heap_B=92914890
+mem_heap_extra_B=13538638
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=347283927
+mem_heap_B=94848843
+mem_heap_extra_B=13834845
+mem_stacks_B=0
+heap_tree=detailed
+n2: 94848843 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 94838131 0x10E582: test_malloc (harness.c:138)
+  n2: 40502267 0x10E805: test_strdup (harness.c:217)
+   n1: 28771584 0x10EB00: q_insert_head (queue.c:62)
+    n1: 28771584 0x10C2FD: do_ih (qtest.c:201)
+     n1: 28771584 0x10D4B1: interpret_cmda (console.c:185)
+      n1: 28771584 0x10D9FD: interpret_cmd (console.c:208)
+       n1: 28771584 0x10E243: cmd_select (console.c:583)
+        n1: 28771584 0x10E510: run_console (console.c:656)
+         n0: 28771584 0x10C9C6: main (qtest.c:1061)
+   n1: 11730683 0x10EB71: q_insert_tail (queue.c:91)
+    n1: 11730683 0x10BFF8: do_it (qtest.c:290)
+     n1: 11730683 0x10D4B1: interpret_cmda (console.c:185)
+      n1: 11730683 0x10D9FD: interpret_cmd (console.c:208)
+       n1: 11730683 0x10E243: cmd_select (console.c:583)
+        n1: 11730683 0x10E510: run_console (console.c:656)
+         n0: 11730683 0x10C9C6: main (qtest.c:1061)
+  n1: 38362112 0x10EAEB: q_insert_head (queue.c:57)
+   n1: 38362112 0x10C2FD: do_ih (qtest.c:201)
+    n1: 38362112 0x10D4B1: interpret_cmda (console.c:185)
+     n1: 38362112 0x10D9FD: interpret_cmd (console.c:208)
+      n1: 38362112 0x10E243: cmd_select (console.c:583)
+       n1: 38362112 0x10E510: run_console (console.c:656)
+        n0: 38362112 0x10C9C6: main (qtest.c:1061)
+  n1: 15973696 0x10EB5C: q_insert_tail (queue.c:86)
+   n1: 15973696 0x10BFF8: do_it (qtest.c:290)
+    n1: 15973696 0x10D4B1: interpret_cmda (console.c:185)
+     n1: 15973696 0x10D9FD: interpret_cmd (console.c:208)
+      n1: 15973696 0x10E243: cmd_select (console.c:583)
+       n1: 15973696 0x10E510: run_console (console.c:656)
+        n0: 15973696 0x10C9C6: main (qtest.c:1061)
+  n0: 56 in 1 place, below massif's threshold (1.00%)
+ n0: 10712 in 7 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=39
+#-----------
+time=354196362
+mem_heap_B=96782796
+mem_heap_extra_B=14131052
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=361108797
+mem_heap_B=98716749
+mem_heap_extra_B=14427259
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=368021232
+mem_heap_B=100650702
+mem_heap_extra_B=14723450
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=374933667
+mem_heap_B=102584655
+mem_heap_extra_B=15019657
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=381846102
+mem_heap_B=104518608
+mem_heap_extra_B=15315864
+mem_stacks_B=0
+heap_tree=detailed
+n2: 104518608 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 104507896 0x10E582: test_malloc (harness.c:138)
+  n2: 44596672 0x10E805: test_strdup (harness.c:217)
+   n1: 28771584 0x10EB00: q_insert_head (queue.c:62)
+    n1: 28771584 0x10C2FD: do_ih (qtest.c:201)
+     n1: 28771584 0x10D4B1: interpret_cmda (console.c:185)
+      n1: 28771584 0x10D9FD: interpret_cmd (console.c:208)
+       n1: 28771584 0x10E243: cmd_select (console.c:583)
+        n1: 28771584 0x10E510: run_console (console.c:656)
+         n0: 28771584 0x10C9C6: main (qtest.c:1061)
+   n1: 15825088 0x10EB71: q_insert_tail (queue.c:91)
+    n1: 15825088 0x10BFF8: do_it (qtest.c:290)
+     n1: 15825088 0x10D4B1: interpret_cmda (console.c:185)
+      n1: 15825088 0x10D9FD: interpret_cmd (console.c:208)
+       n1: 15825088 0x10E243: cmd_select (console.c:583)
+        n1: 15825088 0x10E510: run_console (console.c:656)
+         n0: 15825088 0x10C9C6: main (qtest.c:1061)
+  n1: 38362112 0x10EAEB: q_insert_head (queue.c:57)
+   n1: 38362112 0x10C2FD: do_ih (qtest.c:201)
+    n1: 38362112 0x10D4B1: interpret_cmda (console.c:185)
+     n1: 38362112 0x10D9FD: interpret_cmd (console.c:208)
+      n1: 38362112 0x10E243: cmd_select (console.c:583)
+       n1: 38362112 0x10E510: run_console (console.c:656)
+        n0: 38362112 0x10C9C6: main (qtest.c:1061)
+  n1: 21549056 0x10EB5C: q_insert_tail (queue.c:86)
+   n1: 21549056 0x10BFF8: do_it (qtest.c:290)
+    n1: 21549056 0x10D4B1: interpret_cmda (console.c:185)
+     n1: 21549056 0x10D9FD: interpret_cmd (console.c:208)
+      n1: 21549056 0x10E243: cmd_select (console.c:583)
+       n1: 21549056 0x10E510: run_console (console.c:656)
+        n0: 21549056 0x10C9C6: main (qtest.c:1061)
+  n0: 56 in 1 place, below massif's threshold (1.00%)
+ n0: 10712 in 7 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=44
+#-----------
+time=388758537
+mem_heap_B=106452561
+mem_heap_extra_B=15612071
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=395670972
+mem_heap_B=108386514
+mem_heap_extra_B=15908262
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=402583407
+mem_heap_B=110320467
+mem_heap_extra_B=16204469
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=409495842
+mem_heap_B=112254420
+mem_heap_extra_B=16500676
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=416408277
+mem_heap_B=114188373
+mem_heap_extra_B=16796867
+mem_stacks_B=0
+heap_tree=detailed
+n2: 114188373 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 114177661 0x10E582: test_malloc (harness.c:138)
+  n2: 48691077 0x10E805: test_strdup (harness.c:217)
+   n1: 28771584 0x10EB00: q_insert_head (queue.c:62)
+    n1: 28771584 0x10C2FD: do_ih (qtest.c:201)
+     n1: 28771584 0x10D4B1: interpret_cmda (console.c:185)
+      n1: 28771584 0x10D9FD: interpret_cmd (console.c:208)
+       n1: 28771584 0x10E243: cmd_select (console.c:583)
+        n1: 28771584 0x10E510: run_console (console.c:656)
+         n0: 28771584 0x10C9C6: main (qtest.c:1061)
+   n1: 19919493 0x10EB71: q_insert_tail (queue.c:91)
+    n1: 19919493 0x10BFF8: do_it (qtest.c:290)
+     n1: 19919493 0x10D4B1: interpret_cmda (console.c:185)
+      n1: 19919493 0x10D9FD: interpret_cmd (console.c:208)
+       n1: 19919493 0x10E243: cmd_select (console.c:583)
+        n1: 19919493 0x10E510: run_console (console.c:656)
+         n0: 19919493 0x10C9C6: main (qtest.c:1061)
+  n1: 38362112 0x10EAEB: q_insert_head (queue.c:57)
+   n1: 38362112 0x10C2FD: do_ih (qtest.c:201)
+    n1: 38362112 0x10D4B1: interpret_cmda (console.c:185)
+     n1: 38362112 0x10D9FD: interpret_cmd (console.c:208)
+      n1: 38362112 0x10E243: cmd_select (console.c:583)
+       n1: 38362112 0x10E510: run_console (console.c:656)
+        n0: 38362112 0x10C9C6: main (qtest.c:1061)
+  n1: 27124416 0x10EB5C: q_insert_tail (queue.c:86)
+   n1: 27124416 0x10BFF8: do_it (qtest.c:290)
+    n1: 27124416 0x10D4B1: interpret_cmda (console.c:185)
+     n1: 27124416 0x10D9FD: interpret_cmd (console.c:208)
+      n1: 27124416 0x10E243: cmd_select (console.c:583)
+       n1: 27124416 0x10E510: run_console (console.c:656)
+        n0: 27124416 0x10C9C6: main (qtest.c:1061)
+  n0: 56 in 1 place, below massif's threshold (1.00%)
+ n0: 10712 in 7 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=49
+#-----------
+time=426776958
+mem_heap_B=117089311
+mem_heap_extra_B=17241185
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=433689393
+mem_heap_B=119023264
+mem_heap_extra_B=17537376
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=440601994
+mem_heap_B=120957264
+mem_heap_extra_B=17833592
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=447514429
+mem_heap_B=122891217
+mem_heap_extra_B=18129799
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=454426864
+mem_heap_B=124825170
+mem_heap_extra_B=18425990
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=461339299
+mem_heap_B=126759123
+mem_heap_extra_B=18722197
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=468251734
+mem_heap_B=128693076
+mem_heap_extra_B=19018404
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=475164169
+mem_heap_B=130627029
+mem_heap_extra_B=19314611
+mem_stacks_B=0
+heap_tree=detailed
+n2: 130627029 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 130616317 0x10E582: test_malloc (harness.c:138)
+  n2: 55651589 0x10E805: test_strdup (harness.c:217)
+   n1: 28771584 0x10EB00: q_insert_head (queue.c:62)
+    n1: 28771584 0x10C2FD: do_ih (qtest.c:201)
+     n1: 28771584 0x10D4B1: interpret_cmda (console.c:185)
+      n1: 28771584 0x10D9FD: interpret_cmd (console.c:208)
+       n1: 28771584 0x10E243: cmd_select (console.c:583)
+        n1: 28771584 0x10E510: run_console (console.c:656)
+         n0: 28771584 0x10C9C6: main (qtest.c:1061)
+   n1: 26880005 0x10EB71: q_insert_tail (queue.c:91)
+    n1: 26880005 0x10BFF8: do_it (qtest.c:290)
+     n1: 26880005 0x10D4B1: interpret_cmda (console.c:185)
+      n1: 26880005 0x10D9FD: interpret_cmd (console.c:208)
+       n1: 26880005 0x10E243: cmd_select (console.c:583)
+        n1: 26880005 0x10E510: run_console (console.c:656)
+         n0: 26880005 0x10C9C6: main (qtest.c:1061)
+  n1: 38362112 0x10EAEB: q_insert_head (queue.c:57)
+   n1: 38362112 0x10C2FD: do_ih (qtest.c:201)
+    n1: 38362112 0x10D4B1: interpret_cmda (console.c:185)
+     n1: 38362112 0x10D9FD: interpret_cmd (console.c:208)
+      n1: 38362112 0x10E243: cmd_select (console.c:583)
+       n1: 38362112 0x10E510: run_console (console.c:656)
+        n0: 38362112 0x10C9C6: main (qtest.c:1061)
+  n1: 36602560 0x10EB5C: q_insert_tail (queue.c:86)
+   n1: 36602560 0x10BFF8: do_it (qtest.c:290)
+    n1: 36602560 0x10D4B1: interpret_cmda (console.c:185)
+     n1: 36602560 0x10D9FD: interpret_cmd (console.c:208)
+      n1: 36602560 0x10E243: cmd_select (console.c:583)
+       n1: 36602560 0x10E510: run_console (console.c:656)
+        n0: 36602560 0x10C9C6: main (qtest.c:1061)
+  n0: 56 in 1 place, below massif's threshold (1.00%)
+ n0: 10712 in 7 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=57
+#-----------
+time=492501176
+mem_heap_B=132160336
+mem_heap_extra_B=19549440
+mem_stacks_B=0
+heap_tree=peak
+n2: 132160336 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 132149624 0x10E582: test_malloc (harness.c:138)
+  n2: 56300800 0x10E805: test_strdup (harness.c:217)
+   n1: 28771584 0x10EB00: q_insert_head (queue.c:62)
+    n1: 28771584 0x10C2FD: do_ih (qtest.c:201)
+     n1: 28771584 0x10D4B1: interpret_cmda (console.c:185)
+      n1: 28771584 0x10D9FD: interpret_cmd (console.c:208)
+       n1: 28771584 0x10E243: cmd_select (console.c:583)
+        n1: 28771584 0x10E510: run_console (console.c:656)
+         n0: 28771584 0x10C9C6: main (qtest.c:1061)
+   n1: 27529216 0x10EB71: q_insert_tail (queue.c:91)
+    n1: 27529216 0x10BFF8: do_it (qtest.c:290)
+     n1: 27529216 0x10D4B1: interpret_cmda (console.c:185)
+      n1: 27529216 0x10D9FD: interpret_cmd (console.c:208)
+       n1: 27529216 0x10E243: cmd_select (console.c:583)
+        n1: 27529216 0x10E510: run_console (console.c:656)
+         n0: 27529216 0x10C9C6: main (qtest.c:1061)
+  n1: 38362112 0x10EAEB: q_insert_head (queue.c:57)
+   n1: 38362112 0x10C2FD: do_ih (qtest.c:201)
+    n1: 38362112 0x10D4B1: interpret_cmda (console.c:185)
+     n1: 38362112 0x10D9FD: interpret_cmd (console.c:208)
+      n1: 38362112 0x10E243: cmd_select (console.c:583)
+       n1: 38362112 0x10E510: run_console (console.c:656)
+        n0: 38362112 0x10C9C6: main (qtest.c:1061)
+  n1: 37486656 0x10EB5C: q_insert_tail (queue.c:86)
+   n1: 37486656 0x10BFF8: do_it (qtest.c:290)
+    n1: 37486656 0x10D4B1: interpret_cmda (console.c:185)
+     n1: 37486656 0x10D9FD: interpret_cmd (console.c:208)
+      n1: 37486656 0x10E243: cmd_select (console.c:583)
+       n1: 37486656 0x10E510: run_console (console.c:656)
+        n0: 37486656 0x10C9C6: main (qtest.c:1061)
+  n0: 56 in 1 place, below massif's threshold (1.00%)
+ n0: 10712 in 7 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=58
+#-----------
+time=537563182
+mem_heap_B=132160302
+mem_heap_extra_B=19549370
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=1343564438
+mem_heap_B=132160302
+mem_heap_extra_B=19549370
+mem_stacks_B=0
+heap_tree=empty

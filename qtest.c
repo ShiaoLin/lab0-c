@@ -861,10 +861,16 @@ static bool do_show(int argc, char *argv[])
     return show_queue(0);
 }
 
+static bool do_shuffle(int argc, char *argv[])
+{
+    return (bool) printf("Hello, World\n");
+}
+
 static void console_init()
 {
     ADD_COMMAND(new, "                | Create new queue");
     ADD_COMMAND(free, "                | Delete queue");
+    ADD_COMMAND(shuffle, "                | Shuffle nodes in queue");
     ADD_COMMAND(
         ih,
         " str [n]        | Insert string str at head of queue n times. "
