@@ -1148,8 +1148,7 @@ static void console_init()
         "                | Remove from head of queue without reporting value.");
     ADD_COMMAND(reverse, "                | Reverse queue");
     ADD_COMMAND(sort, "                | Sort queue in ascending order");
-    ADD_COMMAND(linux_sort,
-                "                | (Linux)Sort queue in ascending order");
+    ADD_COMMAND(linux_sort, "        | (Linux)Sort queue in ascending order");
     ADD_COMMAND(
         size, " [n]            | Compute queue size n times (default: n == 1)");
     ADD_COMMAND(show, "                | Show queue contents");
@@ -1311,7 +1310,9 @@ int main(int argc, char *argv[])
     linenoiseSetCompletionCallback(completion);
 
     linenoiseHistorySetMaxLen(HISTORY_LEN);
-    linenoiseHistoryLoad(HISTORY_FILE); /* Load the history at startup */
+    if (!infile_name) {
+        linenoiseHistoryLoad(HISTORY_FILE); /* Load the history at startup */
+    }
     set_verblevel(level);
     if (level > 1) {
         set_echo(true);

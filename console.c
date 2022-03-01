@@ -592,7 +592,6 @@ bool finish_cmd()
     if (!quit_flag)
         ok = ok && do_quit(0, NULL);
     has_infile = false;
-    // linenoiseAtExit();
     return ok && err_cnt == 0;
 }
 
@@ -645,7 +644,7 @@ bool run_console(char *infile_name)
     }
 
     if (!has_infile) {
-        // linenoiseHistoryLoad(HISTORY_FILE);
+        linenoiseHistoryLoad(HISTORY_FILE);
         char *cmdline;
         while ((cmdline = linenoise(prompt)) != NULL) {
             interpret_cmd(cmdline);
